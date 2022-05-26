@@ -4,7 +4,7 @@
 
 ## About
 
-This is a PowerShell script I made in order to quickly recover files, without having to do this manually. \
+This is a PowerShell script I made in order to quickly find and recover files, without having to do this manually. \
 This uses the dll made available by [HiraokaHyperTools](https://github.com/HiraokaHyperTools) at this [repo](https://github.com/HiraokaHyperTools/LibEnumRemotePreviousVersion) \
 Written by Benoît Flache, 2022.  
 
