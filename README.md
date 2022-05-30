@@ -6,6 +6,7 @@
 
 This is a PowerShell script I made in order to quickly find and recover files, without having to do this manually. \
 This uses the dll made available by [HiraokaHyperTools](https://github.com/HiraokaHyperTools) at this [repo](https://github.com/HiraokaHyperTools/LibEnumRemotePreviousVersion) \
+**I imported the dll I built with their C# project, allowing you to use the script right after cloning my repo. However, to be safe you can regenerate it easily by cloning their repo and building it with Visual Studio.** \
 Written by Benoît Flache, 2022.  
 
 ## Features
