@@ -12,7 +12,8 @@ param(
 )
 
 #load DLL for pre execution
-Add-Type -Path("C:\Workspace\powershell\previous\LibEnumRemotePreviousVersion.dll")
+$dlllocation = (((get-item -path ($MyInvocation.MyCommand.Path)).Directory.Fullname) + "\LibEnumRemotePreviousVersion.dll")
+Add-Type -Path($dlllocation)
 $snapshots = [LibEnumRemotePreviousVersion.PreviousVersionOnRemote]::Enum($path)
 
 #parameter check
@@ -37,7 +38,6 @@ if($copyto){
 }
 
 ############## MAIN ##############
-#$snapshots = (.\TestApp.exe $path)
 if(!$snapshots){
     Write-Host "sorry, no shapshots found.exiting"
     Exit
